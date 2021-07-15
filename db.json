@@ -1,0 +1,518 @@
+{
+    "main_products": [
+        {
+            "products": [
+                {
+                    "id": 6,
+                    "price": 1.0,
+                    "addons": [],
+                    "nutrition_data": {
+                        "saturated_fat": 0.0,
+                        "energy": 0.0,
+                        "sugar": 0.0,
+                        "fat": 0.0,
+                        "protein": 0.0,
+                        "sodium": 0.0,
+                        "carbs": 0.0
+                    },
+                    "name": "Coffiee",
+                    "image_path": "coffie-bg.jpg"
+                },
+                {
+                    "id": 2,
+                    "price": 1.0,
+                    "addons": [],
+                    "nutrition_data": {
+                        "saturated_fat": 0.0,
+                        "energy": 0.0,
+                        "sugar": 0.0,
+                        "fat": 0.0,
+                        "protein": 0.0,
+                        "sodium": 0.0,
+                        "carbs": 0.0
+                    },
+                    "name": "Milk Tea",
+                    "image_path": "milk-tea.jpg"
+                },
+                {
+                    "id": 3,
+                    "price": 1.0,
+                    "addons": [],
+                    "nutrition_data": {
+                        "saturated_fat": 0.0,
+                        "energy": 0.0,
+                        "sugar": 0.0,
+                        "fat": 0.0,
+                        "protein": 0.0,
+                        "sodium": 0.0,
+                        "carbs": 0.0
+                    },
+                    "name": "Juice & Smoothie",
+                    "image_path": "Smoothies.webp"
+                },
+                {
+                    "id": 4,
+                    "price": 100.0,
+                    "addons": [
+                        {
+                            "addon_categ_id": 1,
+                            "products": [
+                                {
+                                    "prod_cat_id": 10,
+                                    "price": 20.0,
+                                    "is_mod": true,
+                                    "nutrition_data": {
+                                        "saturated_fat": 2.0,
+                                        "energy": 4.0,
+                                        "sugar": 1.0,
+                                        "fat": 5.0,
+                                        "protein": 6.0,
+                                        "sodium": 6.0,
+                                        "carbs": 9.0
+                                    },
+                                    "qty": 10.0,
+                                    "name": "No Tomatoes"
+                                },
+                                {
+                                    "prod_cat_id": 11,
+                                    "price": 10.0,
+                                    "is_mod": true,
+                                    "nutrition_data": {
+                                        "saturated_fat": 2.0,
+                                        "energy": 3.0,
+                                        "sugar": 1.0,
+                                        "fat": 4.0,
+                                        "protein": 4.0,
+                                        "sodium": 2.0,
+                                        "carbs": 3.0
+                                    },
+                                    "qty": 10.0,
+                                    "name": "No Onions"
+                                }
+                            ],
+                            "addon_categ_name": "Modification"
+                        },
+                        {
+                            "addon_categ_id": 2,
+                            "products": [
+                                {
+                                    "prod_cat_id": 12,
+                                    "price": 23.0,
+                                    "is_mod": false,
+                                    "nutrition_data": {
+                                        "saturated_fat": 23.0,
+                                        "energy": 12.0,
+                                        "sugar": 12.0,
+                                        "fat": 32.0,
+                                        "protein": 12.0,
+                                        "sodium": 0.0,
+                                        "carbs": 10.0
+                                    },
+                                    "qty": 10.0,
+                                    "name": "Green Salads"
+                                },
+                                {
+                                    "prod_cat_id": 13,
+                                    "price": 1.0,
+                                    "is_mod": false,
+                                    "nutrition_data": {
+                                        "saturated_fat": 0.0,
+                                        "energy": 0.0,
+                                        "sugar": 0.0,
+                                        "fat": 0.0,
+                                        "protein": 0.0,
+                                        "sodium": 0.0,
+                                        "carbs": 0.0
+                                    },
+                                    "qty": 10.0,
+                                    "name": "Bulgar"
+                                }
+                            ],
+                            "addon_categ_name": "Addons 1"
+                        },
+                        {
+                            "addon_categ_id": 3,
+                            "products": [
+                                {
+                                    "prod_cat_id": 14,
+                                    "price": 1.0,
+                                    "is_mod": false,
+                                    "nutrition_data": {
+                                        "saturated_fat": 0.0,
+                                        "energy": 0.0,
+                                        "sugar": 0.0,
+                                        "fat": 0.0,
+                                        "protein": 0.0,
+                                        "sodium": 0.0,
+                                        "carbs": 0.0
+                                    },
+                                    "qty": 10.0,
+                                    "name": "Tuna"
+                                },
+                                {
+                                    "prod_cat_id": 15,
+                                    "price": 1.0,
+                                    "is_mod": false,
+                                    "nutrition_data": {
+                                        "saturated_fat": 0.0,
+                                        "energy": 0.0,
+                                        "sugar": 0.0,
+                                        "fat": 0.0,
+                                        "protein": 0.0,
+                                        "sodium": 0.0,
+                                        "carbs": 0.0
+                                    },
+                                    "qty": 10.0,
+                                    "name": "Chick Peas"
+                                }
+                            ],
+                            "addon_categ_name": "Addon 2"
+                        }
+                    ],
+                    "nutrition_data": {
+                        "saturated_fat": 0.0,
+                        "energy": 0.0,
+                        "sugar": 0.0,
+                        "fat": 0.0,
+                        "protein": 0.0,
+                        "sodium": 0.0,
+                        "carbs": 0.0
+                    },
+                    "name": "Fastfood",
+                    "image_path": "fastfood.jpg"
+                },
+                {
+                    "id": 5,
+                    "price": 1.0,
+                    "addons": [
+                        {
+                            "addon_categ_id": 5,
+                            "products": [
+                                {
+                                    "price": 1.0,
+                                    "is_mod": false,
+                                    "nutrition_data": {
+                                        "saturated_fat": 0.0,
+                                        "energy": 0.0,
+                                        "sugar": 0.0,
+                                        "fat": 0.0,
+                                        "protein": 0.0,
+                                        "sodium": 0.0,
+                                        "carbs": 0.0
+                                    },
+                                    "qty": 10.0,
+                                    "name": "Tuna"
+                                },
+                                {
+                                    "price": 1.0,
+                                    "is_mod": false,
+                                    "nutrition_data": {
+                                        "saturated_fat": 0.0,
+                                        "energy": 0.0,
+                                        "sugar": 0.0,
+                                        "fat": 0.0,
+                                        "protein": 0.0,
+                                        "sodium": 0.0,
+                                        "carbs": 0.0
+                                    },
+                                    "qty": 10.0,
+                                    "name": "Steak"
+                                }
+                            ],
+                            "addon_categ_name": "Addons"
+                        },
+                        {
+                            "addon_categ_id": 1,
+                            "products": [
+                                {
+                                    "price": 0.0,
+                                    "is_mod": true,
+                                    "nutrition_data": {
+                                        "saturated_fat": 0.0,
+                                        "energy": 0.0,
+                                        "sugar": 0.0,
+                                        "fat": 0.0,
+                                        "protein": 0.0,
+                                        "sodium": 0.0,
+                                        "carbs": 0.0
+                                    },
+                                    "qty": 1.0,
+                                    "name": "No Onion"
+                                }
+                            ],
+                            "addon_categ_name": "Modification"
+                        }
+                    ],
+                    "nutrition_data": {
+                        "saturated_fat": 0.0,
+                        "energy": 0.0,
+                        "sugar": 0.0,
+                        "fat": 0.0,
+                        "protein": 0.0,
+                        "sodium": 0.0,
+                        "carbs": 0.0
+                    },
+                    "name": "Test Bowl Live 2",
+                    "image_path": "milk-tea.jpg"
+                }
+            ],
+            "id": 1,
+            "pos_categ_name": "Bowls",
+            "image_path": "coffie-bg.jpg"
+        },
+        {
+            "products": [
+                {
+                    "id": 6,
+                    "price": 1.0,
+                    "addons": [],
+                    "nutrition_data": {
+                        "saturated_fat": 0.0,
+                        "energy": 0.0,
+                        "sugar": 0.0,
+                        "fat": 0.0,
+                        "protein": 0.0,
+                        "sodium": 0.0,
+                        "carbs": 0.0
+                    },
+                    "name": "Test Product",
+                    "image_path": "coffie-bg.jpg"
+                },
+                {
+                    "id": 2,
+                    "price": 1.0,
+                    "addons": [],
+                    "nutrition_data": {
+                        "saturated_fat": 0.0,
+                        "energy": 0.0,
+                        "sugar": 0.0,
+                        "fat": 0.0,
+                        "protein": 0.0,
+                        "sodium": 0.0,
+                        "carbs": 0.0
+                    },
+                    "name": "Milk Tea",
+                    "image_path": "milk-tea.jpg"
+                },
+                {
+                    "id": 3,
+                    "price": 1.0,
+                    "addons": [],
+                    "nutrition_data": {
+                        "saturated_fat": 0.0,
+                        "energy": 0.0,
+                        "sugar": 0.0,
+                        "fat": 0.0,
+                        "protein": 0.0,
+                        "sodium": 0.0,
+                        "carbs": 0.0
+                    },
+                    "name": "Juice & Smoothie",
+                    "image_path": "Smoothies.webp"
+                },
+                {
+                    "id": 4,
+                    "price": 1.0,
+                    "addons": [
+                        {
+                            "addon_categ_id": 1,
+                            "products": [
+                                {
+                                    "price": 0.0,
+                                    "is_mod": true,
+                                    "nutrition_data": {
+                                        "saturated_fat": 0.0,
+                                        "energy": 0.0,
+                                        "sugar": 0.0,
+                                        "fat": 0.0,
+                                        "protein": 0.0,
+                                        "sodium": 0.0,
+                                        "carbs": 0.0
+                                    },
+                                    "qty": 10.0,
+                                    "name": "No Tomatoes"
+                                },
+                                {
+                                    "price": 0.0,
+                                    "is_mod": true,
+                                    "nutrition_data": {
+                                        "saturated_fat": 0.0,
+                                        "energy": 0.0,
+                                        "sugar": 0.0,
+                                        "fat": 0.0,
+                                        "protein": 0.0,
+                                        "sodium": 0.0,
+                                        "carbs": 0.0
+                                    },
+                                    "qty": 10.0,
+                                    "name": "No Onions"
+                                }
+                            ],
+                            "addon_categ_name": "Modification"
+                        },
+                        {
+                            "addon_categ_id": 2,
+                            "products": [
+                                {
+                                    "price": 1.0,
+                                    "is_mod": false,
+                                    "nutrition_data": {
+                                        "saturated_fat": 0.0,
+                                        "energy": 0.0,
+                                        "sugar": 0.0,
+                                        "fat": 0.0,
+                                        "protein": 0.0,
+                                        "sodium": 0.0,
+                                        "carbs": 0.0
+                                    },
+                                    "qty": 10.0,
+                                    "name": "Green Salads"
+                                },
+                                {
+                                    "price": 1.0,
+                                    "is_mod": false,
+                                    "nutrition_data": {
+                                        "saturated_fat": 0.0,
+                                        "energy": 0.0,
+                                        "sugar": 0.0,
+                                        "fat": 0.0,
+                                        "protein": 0.0,
+                                        "sodium": 0.0,
+                                        "carbs": 0.0
+                                    },
+                                    "qty": 10.0,
+                                    "name": "Bulgar"
+                                }
+                            ],
+                            "addon_categ_name": "Addons 1"
+                        },
+                        {
+                            "addon_categ_id": 3,
+                            "products": [
+                                {
+                                    "price": 1.0,
+                                    "is_mod": false,
+                                    "nutrition_data": {
+                                        "saturated_fat": 0.0,
+                                        "energy": 0.0,
+                                        "sugar": 0.0,
+                                        "fat": 0.0,
+                                        "protein": 0.0,
+                                        "sodium": 0.0,
+                                        "carbs": 0.0
+                                    },
+                                    "qty": 10.0,
+                                    "name": "Tuna"
+                                },
+                                {
+                                    "price": 1.0,
+                                    "is_mod": false,
+                                    "nutrition_data": {
+                                        "saturated_fat": 0.0,
+                                        "energy": 0.0,
+                                        "sugar": 0.0,
+                                        "fat": 0.0,
+                                        "protein": 0.0,
+                                        "sodium": 0.0,
+                                        "carbs": 0.0
+                                    },
+                                    "qty": 10.0,
+                                    "name": "Chick Peas"
+                                }
+                            ],
+                            "addon_categ_name": "Addon 2"
+                        }
+                    ],
+                    "nutrition_data": {
+                        "saturated_fat": 0.0,
+                        "energy": 0.0,
+                        "sugar": 0.0,
+                        "fat": 0.0,
+                        "protein": 0.0,
+                        "sodium": 0.0,
+                        "carbs": 0.0
+                    },
+                    "name": "Fastfood",
+                    "image_path": "fastfood.jpg"
+                },
+                {
+                    "id": 5,
+                    "price": 1.0,
+                    "addons": [
+                        {
+                            "addon_categ_id": 5,
+                            "products": [
+                                {
+                                    "price": 1.0,
+                                    "is_mod": false,
+                                    "nutrition_data": {
+                                        "saturated_fat": 0.0,
+                                        "energy": 0.0,
+                                        "sugar": 0.0,
+                                        "fat": 0.0,
+                                        "protein": 0.0,
+                                        "sodium": 0.0,
+                                        "carbs": 0.0
+                                    },
+                                    "qty": 10.0,
+                                    "name": "Tuna"
+                                },
+                                {
+                                    "price": 1.0,
+                                    "is_mod": false,
+                                    "nutrition_data": {
+                                        "saturated_fat": 0.0,
+                                        "energy": 0.0,
+                                        "sugar": 0.0,
+                                        "fat": 0.0,
+                                        "protein": 0.0,
+                                        "sodium": 0.0,
+                                        "carbs": 0.0
+                                    },
+                                    "qty": 10.0,
+                                    "name": "Steak"
+                                }
+                            ],
+                            "addon_categ_name": "Addons"
+                        },
+                        {
+                            "addon_categ_id": 1,
+                            "products": [
+                                {
+                                    "price": 0.0,
+                                    "is_mod": true,
+                                    "nutrition_data": {
+                                        "saturated_fat": 0.0,
+                                        "energy": 0.0,
+                                        "sugar": 0.0,
+                                        "fat": 0.0,
+                                        "protein": 0.0,
+                                        "sodium": 0.0,
+                                        "carbs": 0.0
+                                    },
+                                    "qty": 1.0,
+                                    "name": "No Onion"
+                                }
+                            ],
+                            "addon_categ_name": "Modification"
+                        }
+                    ],
+                    "nutrition_data": {
+                        "saturated_fat": 0.0,
+                        "energy": 0.0,
+                        "sugar": 0.0,
+                        "fat": 0.0,
+                        "protein": 0.0,
+                        "sodium": 0.0,
+                        "carbs": 0.0
+                    },
+                    "name": "Test Bowl Live 2",
+                    "image_path": "milk-tea.jpg"
+                }
+            ],
+            "id": 7,
+            "pos_categ_name": "Test",
+            "image_path": "coffie-bg.jpg"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+.grid-layout {
+    display: flex;
+    flex-direction: row;
+    .product-detail {
+        flex-basis: 70%;
+        max-width: 70%;
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+    .payment-detail,
+    .product-listing {
+        flex-basis: 30%;
+        max-width: 30%;
+        height: calc(100vh - 70px);
+        background-color: $white;
+        padding: 15px;
+        overflow-y: auto;
+    }
+}

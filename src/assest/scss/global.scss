@@ -1,0 +1,268 @@
+body {
+    background-color: $light-grey;
+    font-family: $primary-font;
+    overflow: hidden;
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ccc;
+    width: 5px;
+    height: 5px;
+    border-radius: 20px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #808d74;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.nav-pills {
+    .nav-item {
+        margin-right: 30px;
+        .nav-link {
+            .topping-wrapper {
+                position: relative;
+                width: 80px;
+                height: 80px;
+            }
+            position: relative;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #757575;
+            font-family: $primary-font;
+            text-align: center;
+            .img-wrapper {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                overflow: hidden;
+                img {
+                    object-fit: cover;
+                    height: 100%;
+                }
+            }
+            .selected {
+                opacity: 0;
+                display: none;
+            }
+
+            &.active {
+                background-color: transparent;
+                color: #757575;
+                .selected {
+                    display: block;
+                    opacity: 1;
+                    width: 2rem;
+                    height: 2rem;
+                    position: absolute;
+                    background-color: $brand-success;
+                    border-radius: 50%;
+                    top: 1rem;
+                    right: -0.5rem;
+                    z-index: 10;
+                    line-height: 1.5rem;
+                    svg {
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        position: relative;
+                        top: -0.2rem;
+                        right: 0.2rem;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+.total {
+    position: sticky;
+    bottom: -15px;
+    /* padding-bottom: 10px; */
+    background: #fff;
+    padding: 15px 0;
+}
+
+.toppings {
+    text-decoration: none;
+    .img-button {
+        // width: 7rem;
+        // height: 7rem;
+        // flex-basis: 7rem;
+        // border: 0;
+        // position: relative;
+        // margin: auto;
+        img {
+            border-radius: 50%;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    p {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #757575;
+        font-family: "Lato", sans-serif;
+    }
+}
+
+/* Customize the label (the container) */
+.custom-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 7rem;
+    width: 7rem;
+    background-color: #eee;
+    background: transparent;
+    border-radius: 50%;
+    /* overflow: hidden; */
+    display: inline-block;
+    img {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+}
+
+/* On mouse-over, add a grey background color */
+.custom-checkbox {
+    text-align: center;
+    p {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #757575;
+        font-family: "Lato", sans-serif;
+        white-space: nowrap;
+    }
+}
+.custom-checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.custom-checkbox input:checked ~ .checkmark {
+    background-color: #2196f3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark .selected {
+    content: "";
+    position: absolute;
+    display: none;
+    opacity: 1;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    background-color: #3cba54;
+    border-radius: 50%;
+    top: 0;
+    right: 0.2rem;
+    z-index: 10;
+    line-height: 1.5rem;
+    color: $white;
+}
+
+/* Show the checkmark when checked */
+.custom-checkbox input:checked ~ .checkmark .selected {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.custom-checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.no-product-found {
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.form-control {
+    border: 1px solid $brand-secondary;
+    background: transparent;
+    border-radius: 0.35rem;
+    padding-left: 5px;
+    height: 40px;
+    font-size: 14px;
+    color: $brand-secondary;
+    // box-shadow: rgba(105, 105, 105, 0.5) 0px 0px 10px 0px;
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+    transition: all 0.5s;
+    -webkit-appearance: none;
+    appearance: none;
+    &:hover {
+        border: 1px solid $brand-secondary;
+        transition: all 0.5s;
+    }
+    &:focus {
+        border: 1px solid $brand-primary;
+        box-shadow: none;
+        transition: all 0.5s;
+    }
+}
+
+.listing {
+    list-style: none;
+    padding-left: 0;
+    li {
+        padding: 5px 0;
+        &.active{
+            .btn{
+                color: $green;
+            }
+        }
+        .btn {
+            font-size: 18px;
+            color: #000;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+        svg{
+            font-size: 22px;
+            color: $green;
+        }
+    }
+}

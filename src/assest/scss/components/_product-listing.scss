@@ -1,0 +1,179 @@
+.product-box {
+    height: 150px;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+    cursor: pointer;
+    img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .box-overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+    .content {
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        color: #fff;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        P {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.detail-box {
+    margin: 25px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #ccc;
+    .product-title {
+        font-size: 2rem;
+        font-weight: 600;
+        color: $brand-success;
+    }
+    .nutition-detail {
+        display: flex;
+        .product-image {
+            width: 250px;
+            height: 215px;
+            border-radius: 1rem;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid #ccc;
+            .price-tag {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                z-index: 11;
+                background: green;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 40px;
+                font-size: 16px;
+                color: #fff;
+            }
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+               
+            }
+        }
+        .nutrition-box {
+            flex-basis: 85%;
+            max-width: 85%;
+            padding: 0 0 0 25px;
+            .amount {
+                border: 1px solid #e2e1e1;
+                .box-title{
+                    right: auto;
+                }
+            }
+        }
+    }
+}
+
+.amount {
+   
+    position: relative;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 15px;
+    .collapsing{
+        width: 100%;
+    }
+    .collapse{
+        width: 100%;
+        border: 1px solid rgb(226, 225, 225);
+        padding: 15px;
+        border-radius: 8px;
+    }
+    .box-title {
+        position: absolute;
+        top: -13px;
+        background: #fff;
+        left: 20px;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #757575;
+        font-family: $primary-font;
+        white-space: nowrap;
+        display: flex;
+        justify-content: space-between;
+        right: 20px;
+        @media screen and (max-width: 1400px) {
+            top: -10px;
+            font-size: 1.3rem; 
+        }
+    }
+    .counter-btn {
+        // height: 5rem;
+        // width: 5rem;
+        // background: $light-grey;
+        // border-radius: 50%;
+        // font-size: 3rem;
+        // line-height: 2.5rem;
+        // padding: 0;
+      
+        // color: #858585;
+        // border-color: #ccc;
+        height: 4rem;
+        width: 4rem;
+        background: #f2f2f2;
+        border-radius: 50%;
+        font-size: 2rem;
+        line-height: 0.5rem;
+        padding: 0;
+        color: #858585;
+    }
+    .value {
+        background: $brand-success;
+        // height: 5rem;
+        // width: 5rem;
+        // border-radius: 50%;
+        // font-size: 1.5rem;
+        // line-height: 5rem;
+        // padding: 0;
+        // color: $white;
+        // text-align: center;
+        height: 4rem;
+        width: 4rem;
+        background: #3cba54;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        line-height: 4rem;
+        padding: 0;
+        color: #ffffff;
+        text-align: center;
+    }
+}
+
+.bill-info{
+    border-bottom: 2px solid $green !important;
+}

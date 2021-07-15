@@ -1,0 +1,45 @@
+.header {
+    background-color: $white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 0 4px #ccc;
+    .brand-image {
+        width: 14rem;
+        height: 6rem;
+        object-fit: contain;
+    }
+    .search-bar {
+        flex-basis: 70%;
+        max-width: 70%;
+        .input-group {
+            .form-control {
+                height: 4rem;
+                background: $light-grey;
+                border-color: $light-grey;
+                font-size: 1.8rem;
+                border-radius: 8px;
+                &:focus {
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+            .input-group-text {
+                height: 4rem;
+                background: $light-grey;
+                border-color: $light-grey;
+                border-radius: 8px 0 0 8px;
+                svg {
+                    font-size: 2.3rem;
+                    color: #8a8a8a;
+                }
+            }
+        }
+    }
+    .brand,
+    .profile-info {
+        flex-basis: 30%;
+        max-width: 30%;
+        padding: 0 15px;
+    }
+}

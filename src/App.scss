@@ -1,0 +1,11 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import './assest/scss/variables.scss';
+
+@import './assest/scss/components/grid';
+@import './assest/scss/components/header';
+@import './assest/scss/components/product-listing';
+@import './assest/scss/components/button';
+@import './assest/scss/global.scss';
+html { font-size: 62.5%; } 
+body { font-size: 1.4rem; } /* =14px */
+h1   { font-size: 2.4rem; } /* =24px */
