@@ -22,9 +22,7 @@ function isUndefined(value) {
 }
 function isValidPhoneNumber(value) {
     let phoneno =  /^\d{10}$/;
-    console.log(value.match(phoneno));
     if (value.match(phoneno)) {
-        console.log(value);
         return false;
     } else {
         console.log('true', value);

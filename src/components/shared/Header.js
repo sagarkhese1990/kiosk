@@ -1,6 +1,6 @@
 import React from 'react'
 import { Form, FormControl, InputGroup, Navbar } from 'react-bootstrap'
-import logo from '../../assest/images/logo.png'
+import logo from '../../assest/images/logo.jpeg'
 import { IoIosSearch } from "react-icons/io"
 function Header(props) {
     const handleSearch = (value) => {  

@@ -36,13 +36,7 @@ export const paymentCheckout = (data) => async dispatch => {
     try {
         // const result = JSON.stringify(data);
         console.log('data', data);
-        const res = await axios.get('http://testdns.netcoo.it/kiosk/submit/', data
-        // {
-        //     headers: {
-        //         'content-type' : 'application/text'
-        //     }
-        // }
-        )
+        const res = await axios.post('http://testdns.netcoo.it/kiosk/submit/', data)
 
         dispatch({ type: PAYMENT_CHECKOUT, payload: res.data })
 

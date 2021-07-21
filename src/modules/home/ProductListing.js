@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
-import coffieImage from '../../assest/images/coffie-bg.jpg'
 import { IoIosArrowForward } from "react-icons/io";
 function ProductListing(props) {
-   
-    const [active, setActiveClass] = useState('');
+    const [active, setActiveClass] = useState();
     const getProductDataList = (product_data, category) => {
         setActiveClass(category.pos_categ_id)
         props.getProductData(product_data, category);

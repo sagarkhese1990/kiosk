@@ -225,7 +225,7 @@ body {
     font-size: 14px;
     color: $brand-secondary;
     // box-shadow: rgba(105, 105, 105, 0.5) 0px 0px 10px 0px;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
     font-family: "Montserrat", sans-serif;
     transition: all 0.5s;
     -webkit-appearance: none;
@@ -248,7 +248,7 @@ body {
         padding: 5px 0;
         &.active{
             .btn{
-                color: $green;
+                color: #cf8a6b;
             }
         }
         .btn {
@@ -262,7 +262,11 @@ body {
         }
         svg{
             font-size: 22px;
-            color: $green;
+            color: #cf8a6b;
         }
     }
+}
+
+.text-coffie{
+    color: #cf8a6b;
 }

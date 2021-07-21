@@ -160,7 +160,7 @@ class Home extends React.Component {
                                 this.state.paymentDetail.map((price) => {
                                     this.setState({
                                         subTotal: this.state.subTotal + price.price,
-            
+
                                     }, () => { this.taxes() })
                                 })
                             })
@@ -296,13 +296,17 @@ class Home extends React.Component {
         if (this.validate()) {
             this.setState({
                 checkoutDetail: {
-                    customer_name: name,
-                    phone: phone_number,
-                    order_lines: this.state.paymentDetail,
+                    params: {
+                        customer_name: name,
+                        phone: phone_number,
+                        order_lines: this.state.paymentDetail,
+                    }
                     // total_price: this.state.totalprice
                 }
             }, () => {
                 // console.log('checkout data', JSON.stringify(this.state.checkoutDetail));
+                // const params = this.state.checkoutDetail;
+                // console.log('params', this.state.checkoutDetail);
                 this.props.paymentCheckout(this.state.checkoutDetail)
                 this.setState({
                     show: false,
@@ -315,7 +319,7 @@ class Home extends React.Component {
                     // console.log('messgae', this.props.messgae.products.message);
                     this.props.getProducts();
                 })
-                
+
             })
         }
 
@@ -341,10 +345,10 @@ class Home extends React.Component {
             result = false;
         }
         // var phoneno = /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
-        if (Helper.isNull(phone_number) || Helper.isValidPhoneNumber(phone_number)) {
+        if (Helper.isNull(phone_number) || Helper.isNumber(phone_number)) {
             fieldError['phone_number'] = "Please enter valid phone number";
             result = false;
-        } 
+        }
         this.setState({ errors: fieldError });
         return result;
     }
@@ -372,11 +376,11 @@ class Home extends React.Component {
                                     <div className="bill-info py-4 border-bottom" key={i}>
                                         <p className="d-flex justify-content-between">
                                             <span className="fw-bold fs-4">{payment.name}</span>
-                                            <span className="fw-bold fs-4 text-success">{payment.price}</span>
+                                            <span className="fw-bold fs-4 text-coffie">{payment.price}</span>
                                         </p>
                                         <p className="d-flex justify-content-between">
                                             <span className="fw-bold fs-4">Quantity</span>
-                                            <span className="fw-bold fs-4 text-success">{payment.qty}</span>
+                                            <span className="fw-bold fs-4 text-coffie">{payment.qty}</span>
                                         </p>
                                         <p className="d-flex justify-content-start">
                                             {payment.addons.map((addons, idx) => {
@@ -420,15 +424,15 @@ class Home extends React.Component {
                         <div className="total">
                             <p className="d-flex justify-content-between">
                                 <span className="fw-bold fs-4">Subtotal</span>
-                                <span className="fw-bold fs-4 text-success">{this.state.subTotal}</span>
+                                <span className="fw-bold fs-4 text-coffie">{this.state.subTotal}</span>
                             </p>
                             <p className="d-flex justify-content-between">
                                 <span className="fw-bold fs-4">Taxes</span>
-                                <span className="fw-bold fs-4 text-success">{parseFloat(this.state.totalTaxes).toFixed(2)}</span>
+                                <span className="fw-bold fs-4 text-coffie">{parseFloat(this.state.totalTaxes).toFixed(2)}</span>
                             </p>
                             <p className="d-flex justify-content-between">
                                 <span className="fw-bold fs-3">Total</span>
-                                <span className="fw-bold fs-3 text-success">{parseFloat(this.state.totalprice).toFixed(2)}</span>
+                                <span className="fw-bold fs-3 text-coffie">{parseFloat(this.state.totalprice).toFixed(2)}</span>
                             </p>
                             <div className="text-center">
                                 {/* <Button color="success" variant="success" onClick={this.proceedForPayment}> Place Order</Button> */}
